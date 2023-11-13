@@ -12,7 +12,7 @@ Tasks for this lab:
 
 ## Stateless Widgets:
 A stateless widget is immutable, meaning its properties cannot change once it is created. It represents part of the user interface and does not hold any internal state. Here’s an example of a stateless widget that displays a simple text:
-
+```
 import 'package:flutter/material.dart';
 
 class MyStatelessWidget extends StatelessWidget {
@@ -25,14 +25,14 @@ class MyStatelessWidget extends StatelessWidget {
     return Text(text);
   }
 }
-
+```
 In this example, MyStatelessWidget takes a text parameter in its constructor and displays it using the Text widget. Since it doesn’t have any internal state, the text value will always be displayed as is.
 
 
 ## Stateful Widgets:
 A stateful widget, on the other hand, can maintain mutable state that can change over time. This allows the widget to react to user interactions, network responses, or other events. Let’s take an example of a counter widget that increments a value whenever a button is pressed:
 
-
+```
 import 'package:flutter/material.dart';
 
 class MyStatefulWidget extends StatefulWidget {
@@ -62,6 +62,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     );
   }
 }
-
+```
 In this example, MyStatefulWidget is a stateful widget. It has an internal state variable counter, which is incremented whenever the button is pressed. The incrementCounter function calls setState to notify Flutter that the state has changed, triggering a rebuild of the widget. The updated value of counter is then displayed in the Text widget.
 
