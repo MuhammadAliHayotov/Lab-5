@@ -4,9 +4,9 @@ Deadline for this lab:
 this lab itself!
 
 Tasks for this lab:
-1. Convert the given Stateless Screens into Stateful (login_page.dart file)
+1. Convert the given Stateless Screens into Stateful (login_screen.dart file)
 2. Make a function that changes the Icon on the top to 'login' icon once the user presses Login button
-3. Load a different image on the press of a Login button.
+3. Load a different image on the press of a Login button (you can also swap the images).
 
 ## Getting Started
 
