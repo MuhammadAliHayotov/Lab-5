@@ -1,36 +1,15 @@
 import 'package:flutter/material.dart';
 import 'main_page.dart';
 
-/*
-class HomeScreen extends StatelessWidget {
-  final String username;
 
-  //creating a constructor (Necessary if you have final data members in your class
-  const HomeScreen({super.key, required this.username});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Home Screen"),
-      ),
-      body: Center(
-        child: Text('Welcome $username!'),
-      ),
-    );
-  }
-}*/
-
-
-
-class HomeScreen extends StatelessWidget {
+class RegistrationScreen extends StatelessWidget {
   final String username;
   final TextEditingController _nameController = TextEditingController();
 
   //TODO: add TextEditingControllers for email, password, phone and address
 
   //this is just a sample to get some data from the previous screen
-  HomeScreen({super.key, required this.username});
+  RegistrationScreen({super.key, required this.username});
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +32,7 @@ class HomeScreen extends StatelessWidget {
               'Name',
               style: TextStyle(fontSize: 16.0),
             ),
+            const SizedBox(height: 16.0),
             TextField(
               controller: _nameController,
               decoration: const InputDecoration(
