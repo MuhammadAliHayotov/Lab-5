@@ -65,3 +65,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 ```
 In this example, MyStatefulWidget is a stateful widget. It has an internal state variable counter, which is incremented whenever the button is pressed. The incrementCounter function calls setState to notify Flutter that the state has changed, triggering a rebuild of the widget. The updated value of counter is then displayed in the Text widget.
 
+
+# Lab 6
+
+In this lab you need to continue with the application that you were given in lab 5. In this project, you are given several dart files, registration_screen.dart and main_page.dart. In both of these files, you have special tasks denoted by "TODO" comments which need to be completed.
+
+Tasks: 
+1. In registration_screen.dart file complete all the TODOs: i.e.: add phone, email, password and address text and textField widgets (there is an example which you may refer)
+2. Also, in Register button you need to use Navigator.push() in which you should send the the necessary information in the form of Map (example is provided in the Last weeks lecture). In this map you should include the texts from Textfields: name, phone, email and address.
+3. You should design main page in main_page.dart such that you have one Image in the center, below you have: name, phone, email and address widgets, whose information should be received from the previous screen (Navigator.push() of registration_screen)
+
+   ##Good luck!
